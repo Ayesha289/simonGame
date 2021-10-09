@@ -4,7 +4,14 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-$(".button").click(function() {
+$("#instructions").click(function(){
+  window.location.href="instruct.html";
+})
+$("#returnHome").click(function(){
+  window.location.href="index.html";
+})
+
+$("#start-button").click(function() {
   $(".button").hide();
   if (!started) {
     $("#level-title").text("Level " + level);
@@ -75,3 +82,4 @@ function startOver() {
   gamePattern = [];
   started = false;
 }
+
