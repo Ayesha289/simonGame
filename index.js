@@ -43,7 +43,7 @@ function checkAnswer(currentLevel) {
       playSound("wrong");
       $("body").addClass("game-over");
       $("#level-title").text("Game Over, Press Start to Play Again");
-      $(".button").show();
+      $("#start-button").show();
       setTimeout(function () {
         $("body").removeClass("game-over");
       }, 200);
